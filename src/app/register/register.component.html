@@ -1,0 +1,200 @@
+<!-- <div class="card">
+  <h4 class="card-header">Register</h4>
+  <div class="card-body">
+      <form formGroup="form">
+          <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" formControlName="firstName" class="form-control"  />
+            
+          </div>
+          <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" formControlName="lastName" class="form-control"   />
+            
+          </div>
+          <div class="form-group">
+              <label for="gender">Gender</label>
+              <input type="text" formControlName="gender"class="form-control"  />
+              
+          </div>
+          <div class="form-group">
+              <label for="bloodtype">BloodType</label>
+              <input type="text" formControlName="bloodtype"  />
+              
+          </div>
+
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" formControlName="email" class="form-control" />
+            
+        </div>
+
+
+
+        <div class="form-group">
+          <label for="city">City</label>
+          <input type="text" formControlName="city" class="form-control"  />
+          
+      </div>
+
+
+      <div class="form-group">
+        <label for="bloo">Password</label>
+        <input type="password" formControlName="password"  />
+        
+    </div>
+
+          
+      </form>
+  </div>
+</div> -->
+<!-- <div class="card" style="background-color:honeydew">
+  <h4 class="card-header" style="color:indigo">Register</h4>
+<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+  
+  <div class="mb-3">
+    <label for="firstname" class="form-label">First Name</label>
+    <input type="text" name="firstname"  ngModel   class="form-control" id="firstname" placeholder="First Name" aria-describedby="emailHelp">
+   </div>
+  
+   <div class="mb-3">
+    <label for="lastname" class="form-label">Last Name</label>
+    <input type="text"name="lastname"  ngModel class="form-control" id="lastname" placeholder="Last Name " aria-describedby="emailHelp">
+   </div>
+
+
+   <div class="mb-3">
+    <label for="gender" class="form-label">Gender</label>
+    <input type="text" name="Gender"  ngModel class="form-control" id="gender" placeholder="Gender " aria-describedby="emailHelp">
+   </div>
+
+
+   <div class="mb-3">
+    <label for="bloodtype" class="form-label">Blood Type</label>
+    <input type="text" name="BloodType"   ngModel class="form-control" id="bloodtype" placeholder="Blood Type " aria-describedby="emailHelp">
+   </div>
+
+
+
+
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email"  ngModel class="form-control" id="exampleInputEmail1" placeholder="Email" aria-describedby="emailHelp">
+   </div>
+
+
+   <div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input type="text" name="City" ngModel class="form-control" id="city" placeholder="City" aria-describedby="emailHelp">
+   </div>
+
+
+
+  
+
+
+
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" name="password" ngModel placeholder="Password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+<div class="container-fluid">
+  <div class="row no-gutter">
+      <!-- The image half -->
+      <div class="col-md-6 d-none d-md-flex bg-image"></div>
+      <!-- The content half -->
+      <div class="col-md-6 bg-light">
+          <div class="login d-flex align-items-center py-5">
+              <!-- Demo content-->
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-10 col-xl-7 mx-auto">
+                          <h3 class="display-4">SignUp</h3>
+                          <p class="text-muted mb-4">Create a Account </p>
+                          <form  #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+                            <div class="form-group mb-3">
+                              <input id="firstname" type="text" name="firstname"  ngModel  placeholder="firstName" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                          </div>
+
+
+                          <div class="form-group mb-3">
+                            <input id="lastname" type="text" name="lastname"  ngModel  placeholder="LastName" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                        </div>
+
+
+
+
+                        <div class="form-group mb-3">
+                          <input id="gender" type="text" name="gender"  ngModel  placeholder="Gender" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                      </div>
+ 
+                      <div class="form-group mb-3">
+                      <select class="form-select" name="bloodtype"  ngModel aria-label="Default select example" required="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                        <option selected>Blood Type</option>
+                        <option value="A+">A+</option>
+                        <option value="B+">B+</option>
+                        <option value="o+">o+</option>
+                        <option value="AB+">AB+</option>
+                      </select>
+</div>
+
+
+
+
+
+
+
+                              <div class="form-group mb-3">
+                                  <input id="inputEmail" type="email"  name="email"  ngModel  placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                              </div>
+
+
+                              <div class="form-group mb-3">
+                                <input id="city" type="text" name="city"  ngModel  placeholder="City" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                            </div>
+  
+
+
+
+
+
+
+                              <div class="form-group mb-3">
+                                  <input id="inputPassword" type="password" name="password"  ngModel  placeholder="Password" required="" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                              </div>
+                              <div class="custom-control custom-checkbox mb-3">
+                                  <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                                  <label for="customCheck1" class="custom-control-label">Remember password</label>
+                              </div>
+                              <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign Up</button>
+                              <li><a href="#"  routerLink="/Login" ><span class="glyphicon glyphicon-log-in"></span> Log in</a></li>
+                              <!-- <div class="text-center d-flex justify-content-between mt-4" ><a href="#"  > 
+                                      <u >Login</u></a></div> -->
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

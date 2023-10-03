@@ -1,0 +1,53 @@
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#"  routerLink="Home">BloodStock</a>
+      </li>
+      </ul>
+
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">UserId</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Gender</th>
+        <th scope="col">BloodType</th>
+        
+        <th scope="col">Email</th>
+        <th scope="col">City</th>
+        
+        <th scope="col">DOnarDate</th>
+        
+        <th scope="col">Options</th>
+        
+
+      </tr>
+    </thead>
+    <tbody>
+        <tr style= "color: cornflowerblue; font-style: italic;" >
+            <td>{{data.UserId}}</td>
+            <td>{{data.FirstName}}</td>
+            <td>{{data.LastName}}</td>
+            <td>{{data.Gender}}</td>
+            <td>{{data.BloodType}}</td>
+            <td>{{data.Email}}</td>
+            <td>{{data.City}}</td>
+           
+            
+            <td>
+                <button type="button" class="btn btn-light mr-1" style="color: crimson;" 
+                
+                >
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-trash-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7z"/>
+                  </svg>
+                </button>
+            </td>
+            
+      </tr>
+     
+    </tbody>
+  </table>

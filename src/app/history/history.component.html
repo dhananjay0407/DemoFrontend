@@ -1,0 +1,41 @@
+<div class ="topnav">
+    <div class="topnav-right">    
+    <a class ="active" routerLink="Blood">Blood-Request</a>
+    <a class ="active" routerLink="Donar">Donar-Request</a>
+    
+    <a class ="active" routerLink="History">History</a>
+
+    <a class ="active" routerLink="admin">Logout</a>
+    
+</div>
+</div>
+<div class="container">
+    <div class="d-flex justify-content-center"> <h3> History </h3> </div>
+    
+    
+    
+    <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Id</th>
+    <th>Full Name</th>
+    <th>Email</th>
+    <th>Quantity</th>
+    <th>Date</th>
+    <th>Type</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let dataItem of HistoryList">
+    <td>{{dataItem.Id}}</td>
+    <td>{{dataItem.FullName}}</td>
+    <td>{{dataItem.Email}}</td>
+    <td>200 Ml</td>
+    <td>{{dataItem.Date}}</td>
+    <td>{{dataItem.Type}}</td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+    <br>
+    </div>

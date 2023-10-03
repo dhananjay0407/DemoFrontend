@@ -1,0 +1,43 @@
+<div class ="topnav">
+    <div class="topnav-right">    
+    <a class ="active" routerLink="Blood">Blood-Request</a>
+    <a class ="active" routerLink="Donar">Donar-Request</a>
+    
+    <a class ="active" routerLink="History">History</a>
+
+    <a class ="active" routerLink="admin">Logout</a>
+    
+</div>
+</div>
+<div class="container">
+    <div class="d-flex justify-content-center"> <h3> Blood Request </h3> </div>
+    <table class="table table-striped">
+    <thead>
+    <tr>
+    <th>Id</th>
+    <th>FullName</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>Address</th>
+    <th>BloodGroup</th>
+    <th>BloodQuantity</th>
+    <th>Accept</th>
+    <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let dataItem of BloodRequestList">
+    <td>{{dataItem.id}}</td>
+    <td>{{dataItem.FullName}}</td>
+    <td>{{dataItem.Email}}</td>
+    <td>{{dataItem.Mobile}}</td>
+    <td>{{dataItem.Address}}</td>
+    <td>{{dataItem.BloodGroup}}</td>
+    <td>{{dataItem.BloodQuantity}}</td>
+    <td> <input class="btn btn-primary" type="submit" value="Approve" (click)="AcceptApproveBloodRequestcount(dataItem)"> </td>
+    <td> <input class="btn btn-danger" type="submit" value="Reject" (click)="deleteBloodrequestClick(dataItem)" > </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+   

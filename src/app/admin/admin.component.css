@@ -1,0 +1,21 @@
+.card
+{
+
+padding: 134px;
+
+}
+
+
+
+
+.login,
+.image {
+  min-height: 100vh;
+}
+
+
+.bg-image {
+    background-image: url('http://ohso.com/wp-content/uploads/2016/08/savelifegiveblood2.jpg');
+    background-size: cover;
+    background-position: center center;
+  }
